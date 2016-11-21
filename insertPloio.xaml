@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="insertPloio"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="204" d:DesignWidth="699" Loaded="startApp">
+    <Grid Background="#EEEEEE">
+        <Label Content="Τύπος Πλοίου / Όνομα Πλοίου:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Είδος Ακινησίας:" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ημερομηνία:" HorizontalAlignment="Left" Margin="10,169,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="eidosAkinisiaCombo" HorizontalAlignment="Left" Margin="113,141,0,0" VerticalAlignment="Top" Width="120"/>
+        <DatePicker Name="datePick" HorizontalAlignment="Left" Margin="113,170,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="onomaploioyText" HorizontalAlignment="Left" Height="23" Margin="193,13,0,0" TextWrapping="Wrap" TextChanged="autoCompl" 
+                 VerticalAlignment="Top" Width="227"/>
+        <ListBox Name="ploiaList" HorizontalAlignment="Left" Height="91" MouseDoubleClick="onomaSelected"
+                 Margin="193,41,0,0" VerticalAlignment="Top"  Width="227"/>
+        <Button Content="Αποθήκευση" Click="insertPloioSub" HorizontalAlignment="Left" Margin="377,141,0,0" VerticalAlignment="Top" Width="94" Height="53"/>
+        <Label Content="Πλευρικό:" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top"/>
+        <Label Name="pleyrikoLab" Content="Label" HorizontalAlignment="Left" Margin="102,69,0,0" VerticalAlignment="Top" Width="86"/>
+        <Label Content="Υπηρεσία:" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="68"/>
+        <Label Name="ypiresiaLab" Content="Label" HorizontalAlignment="Left" Margin="102,100,0,0" VerticalAlignment="Top" Width="86"/>
+        <Label Content="Τύπος Πλοίου:" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top"/>
+        <Label Name="tiposLab" Content="Label" HorizontalAlignment="Left" Margin="102,38,0,0" VerticalAlignment="Top" Width="86"/>
+        <Label Content="Έτος" HorizontalAlignment="Left" Margin="238,139,0,0" VerticalAlignment="Top" Width="39"/>
+        <ComboBox x:Name="etosCombo" HorizontalAlignment="Left" Margin="277,141,0,0" VerticalAlignment="Top" Width="67"/>
+    </Grid>
+</UserControl>
